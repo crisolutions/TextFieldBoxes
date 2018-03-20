@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 //        final TextFieldBoxes tfb = findViewById(R.id.text_field_boxes2);
-        final ExtendedEditText t = findViewById(R.id.extendedEditText);
+        //final ExtendedEditText t = findViewById(R.id.extendedEditText);
 
         final String[] aWords = {"Apple", "Android", "Alternative"};
         final ArrayAdapter<String> adapter = new ArrayAdapter<>
                 (this, android.R.layout.select_dialog_item, aWords);
-        t.setThreshold(1);
-        t.setAdapter(adapter);
+        //t.setThreshold(1);
+        //t.setAdapter(adapter);
 
         final Button darkButton = findViewById(R.id.dark_button);
 
