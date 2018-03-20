@@ -247,26 +247,33 @@ public class TextFieldBoxes extends FrameLayout {
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int heightMode = MeasureSpec.getMode(heightMeasureSpec);
 
+/*
         if (widthMode == MeasureSpec.EXACTLY) {
 
-            /* match_parent or specific value */
+            */
+/* match_parent or specific value *//*
+
             this.inputLayout.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
             this.upperPanel.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
             this.editTextLayout.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
 
             if (this.endIconImageButton.getVisibility() == View.VISIBLE) {
 
-                ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
+                */
+/*((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
                         .addRule(RelativeLayout.RIGHT_OF, 0);
                 ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                        .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_end_icon_button);
+                        .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_end_icon_button);*//*
 
-                if (android.os.Build.VERSION.SDK_INT >= 17) {
+
+               */
+/* if (android.os.Build.VERSION.SDK_INT >= 17) {
                     ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
                             .addRule(RelativeLayout.END_OF, 0);
                     ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
                             .addRule(RelativeLayout.START_OF, R.id.text_field_boxes_end_icon_button);
-                }
+                }*//*
+
 
                 ((RelativeLayout.LayoutParams) this.endIconImageButton.getLayoutParams())
                         .addRule(RelativeLayout.RIGHT_OF, 0);
@@ -306,7 +313,9 @@ public class TextFieldBoxes extends FrameLayout {
 
         } else if (widthMode == MeasureSpec.AT_MOST) {
 
-            /* wrap_content */
+            */
+/* wrap_content *//*
+
             this.inputLayout.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
             this.upperPanel.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
             this.editTextLayout.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -314,7 +323,9 @@ public class TextFieldBoxes extends FrameLayout {
 
         if (heightMode == MeasureSpec.EXACTLY) {
 
-            /* match_parent or specific value */
+            */
+/* match_parent or specific value *//*
+
             this.panel.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
             this.rightShell.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
             this.upperPanel.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -332,7 +343,9 @@ public class TextFieldBoxes extends FrameLayout {
 
         } else if (heightMode == MeasureSpec.AT_MOST) {
 
-            /* wrap_content */
+            */
+/* wrap_content *//*
+
             this.panel.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
             this.rightShell.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
             this.upperPanel.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
@@ -348,6 +361,7 @@ public class TextFieldBoxes extends FrameLayout {
             ((RelativeLayout.LayoutParams) this.panel.getLayoutParams())
                     .addRule(RelativeLayout.ABOVE, 0);
         }
+*/
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
