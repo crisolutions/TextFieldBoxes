@@ -107,7 +107,8 @@
                             android:layout_width="@dimen/end_icon_width"
                             android:layout_height="@dimen/end_icon_height"
                             android:background="?selectableItemBackgroundBorderless"
-                            android:visibility="gone"/>
+                            android:visibility="gone"
+                            android:layout_gravity="bottom"/>
 
                     </LinearLayout>
 

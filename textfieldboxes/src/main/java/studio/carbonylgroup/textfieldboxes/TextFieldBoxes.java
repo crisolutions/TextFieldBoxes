@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -243,126 +244,6 @@ public class TextFieldBoxes extends FrameLayout {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-
-        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
-        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
-
-/*
-        if (widthMode == MeasureSpec.EXACTLY) {
-
-            */
-/* match_parent or specific value *//*
-
-            this.inputLayout.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
-            this.upperPanel.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
-            this.editTextLayout.getLayoutParams().width = ViewGroup.LayoutParams.MATCH_PARENT;
-
-            if (this.endIconImageButton.getVisibility() == View.VISIBLE) {
-
-                */
-/*((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                        .addRule(RelativeLayout.RIGHT_OF, 0);
-                ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                        .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_end_icon_button);*//*
-
-
-               */
-/* if (android.os.Build.VERSION.SDK_INT >= 17) {
-                    ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                            .addRule(RelativeLayout.END_OF, 0);
-                    ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                            .addRule(RelativeLayout.START_OF, R.id.text_field_boxes_end_icon_button);
-                }*//*
-
-
-                ((RelativeLayout.LayoutParams) this.endIconImageButton.getLayoutParams())
-                        .addRule(RelativeLayout.RIGHT_OF, 0);
-                ((RelativeLayout.LayoutParams) this.endIconImageButton.getLayoutParams())
-                        .addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-
-                if (android.os.Build.VERSION.SDK_INT >= 17) {
-                    ((RelativeLayout.LayoutParams) this.endIconImageButton.getLayoutParams())
-                            .addRule(RelativeLayout.END_OF, 0);
-                    ((RelativeLayout.LayoutParams) this.endIconImageButton.getLayoutParams())
-                            .addRule(RelativeLayout.ALIGN_PARENT_END);
-                }
-
-                if (this.hasClearButton)
-                    ((RelativeLayout.LayoutParams) this.inputLayout.getLayoutParams())
-                            .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_clear_button);
-                else
-                    ((RelativeLayout.LayoutParams) this.inputLayout.getLayoutParams())
-                            .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_end_icon_button);
-
-            } else {
-                ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                        .addRule(RelativeLayout.RIGHT_OF, 0);
-                ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                        .addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-
-                if (android.os.Build.VERSION.SDK_INT >= 17) {
-                    ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                            .addRule(RelativeLayout.END_OF, 0);
-                    ((RelativeLayout.LayoutParams) this.clearButton.getLayoutParams())
-                            .addRule(RelativeLayout.ALIGN_PARENT_END);
-                }
-
-                ((RelativeLayout.LayoutParams) this.inputLayout.getLayoutParams())
-                        .addRule(RelativeLayout.LEFT_OF, R.id.text_field_boxes_clear_button);
-            }
-
-        } else if (widthMode == MeasureSpec.AT_MOST) {
-
-            */
-/* wrap_content *//*
-
-            this.inputLayout.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
-            this.upperPanel.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
-            this.editTextLayout.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
-        }
-
-        if (heightMode == MeasureSpec.EXACTLY) {
-
-            */
-/* match_parent or specific value *//*
-
-            this.panel.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
-            this.rightShell.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
-            this.upperPanel.getLayoutParams().height = ViewGroup.LayoutParams.MATCH_PARENT;
-
-            ((RelativeLayout.LayoutParams) this.bottomPart.getLayoutParams())
-                    .addRule(RelativeLayout.BELOW, 0);
-            ((RelativeLayout.LayoutParams) this.bottomLine.getLayoutParams())
-                    .addRule(RelativeLayout.BELOW, 0);
-            ((RelativeLayout.LayoutParams) this.bottomPart.getLayoutParams())
-                    .addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-            ((RelativeLayout.LayoutParams) this.bottomLine.getLayoutParams())
-                    .addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-            ((RelativeLayout.LayoutParams) this.panel.getLayoutParams())
-                    .addRule(RelativeLayout.ABOVE, R.id.text_field_boxes_bottom);
-
-        } else if (heightMode == MeasureSpec.AT_MOST) {
-
-            */
-/* wrap_content *//*
-
-            this.panel.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
-            this.rightShell.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
-            this.upperPanel.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
-
-            ((RelativeLayout.LayoutParams) this.bottomPart.getLayoutParams())
-                    .addRule(RelativeLayout.BELOW, R.id.text_field_boxes_panel);
-            ((RelativeLayout.LayoutParams) this.bottomLine.getLayoutParams())
-                    .addRule(RelativeLayout.BELOW, R.id.text_field_boxes_upper_panel);
-            ((RelativeLayout.LayoutParams) this.bottomPart.getLayoutParams())
-                    .addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 0);
-            ((RelativeLayout.LayoutParams) this.bottomLine.getLayoutParams())
-                    .addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, 0);
-            ((RelativeLayout.LayoutParams) this.panel.getLayoutParams())
-                    .addRule(RelativeLayout.ABOVE, 0);
-        }
-*/
-
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
